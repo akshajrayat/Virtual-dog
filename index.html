@@ -3,9 +3,29 @@
     <script src="p5.dom.min.js"></script>
     <script src="p5.sound.min.js"></script>
 <script src="./p5.play.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8">
+<!-- The core Firebase JS SDK is always required and must be listed first -->
 
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA53FbnXVn_Pad3-jf0_s1K5prbQflr68w",
+    authDomain: "virtual-pet-20c86.firebaseapp.com",
+    databaseURL: "https://virtual-pet-20c86-default-rtdb.firebaseio.com",
+    projectId: "virtual-pet-20c86",
+    storageBucket: "virtual-pet-20c86.appspot.com",
+    messagingSenderId: "991096538635",
+    appId: "1:991096538635:web:219319cb2652d47fe0290e"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
   </head>
   <body>
       <script src="sketch.js"></script>
